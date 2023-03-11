@@ -50,7 +50,7 @@ void tx_application_define(void* first_unused_memory)
 
     // Create Azure thread
     UINT status = tx_thread_create(&azure_thread,
-        "Azure Thread",
+        (char*)"Azure Thread",
         azure_thread_entry,
         0,
         azure_thread_stack,

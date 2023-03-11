@@ -15,8 +15,8 @@ typedef enum
 // ----------------------------------------------------------------------------
 // WiFi connection config
 // ----------------------------------------------------------------------------
-#define WIFI_SSID     ""
-#define WIFI_PASSWORD ""
+#define WIFI_SSID     (char*)""
+#define WIFI_PASSWORD (char*)""
 #define WIFI_MODE     WPA2_PSK_AES
 
 // ----------------------------------------------------------------------------
