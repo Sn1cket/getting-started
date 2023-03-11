@@ -6,6 +6,10 @@
 
 #include "stm32f4xx_hal.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #define BUTTON_A_PIN GPIO_PIN_4
 #define BUTTON_B_PIN GPIO_PIN_10
 
@@ -29,5 +33,9 @@ extern UART_HandleTypeDef UartHandle;
 
 /* Define prototypes. */
 void board_init(void);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // _BOARD_INIT_H

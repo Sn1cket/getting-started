@@ -9,11 +9,19 @@
 
 #include "azure_config.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 extern NX_PACKET_POOL nx_pool[2]; // 0=TX, 1=RX.
 extern NX_IP nx_ip;
 extern NX_DNS nx_dns_client;
 
 UINT wwd_network_init(CHAR* ssid, CHAR* password, WiFi_Mode mode);
 UINT wwd_network_connect();
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
