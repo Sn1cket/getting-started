@@ -12,7 +12,7 @@ set(SOURCES
     board_init.c
     console.c
     screen.c
-    main.c
+    main.cpp
     wwd_networking.c
 )
 
